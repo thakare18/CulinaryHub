@@ -1,9 +1,10 @@
 import React from 'react'
+import Mainroutes from './routes/Mainroutes'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='bg-red-500 text-6xl'>Hello from react</h1>
+    <div className="w-screen h-screen bg-gray-700 py-10 px-[10%]">
+      <Mainroutes/>
     </div>
   )
 }
