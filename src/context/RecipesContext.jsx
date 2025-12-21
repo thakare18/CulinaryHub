@@ -1,18 +1,18 @@
- import React, { createContext } from 'react'
- import { useState } from 'react';
+import React, { createContext, useState } from 'react';
 
- export const recipesContext = createContext(null);
 
-const RecipesContext = (props) => {
-    const [data, setfirst] = useState([]);
-    
+export const recipesContext = createContext();
+
+const RecipesContext = ({ children }) => {
+  const [data, setdata] = useState([]);
+
+  console.log("Context data:", data);
+
   return (
-    <div>
-      <recipesContext.Provider value={{data, setfirst}} >
-        {props.children}
-      </recipesContext.Provider>
-    </div>
-  )
-}
+    <recipesContext.Provider value={{ data, setdata }}>
+      {children}
+    </recipesContext.Provider>
+  );
+};
 
-export default RecipesContext
+export default RecipesContext;
