@@ -1,19 +1,25 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState } from 'react'
+import { useContext } from 'react'
+export const recipecontext = createContext(null)
 
+const RecipeContext = (props) => {
 
-export const recipesContext = createContext();
+  const [data, setData] = useState(() => {
+    const localData = localStorage.getItem("recipes");
+    return localData ? JSON.parse(localData) : [];
+  });
 
-const RecipesContext = ({ children }) => {
-  
-  const [data, setdata] = useState([]);
-
-  console.log("Context data:", data);
+  const [favourite, setFavourite] = useState(() => {
+    const localFav = localStorage.getItem("favourite");
+    return localFav ? JSON.parse(localFav) : [];
+  });
 
   return (
-    <recipesContext.Provider value={{ data, setdata }}>
-      {children}
-    </recipesContext.Provider>
-  );
-};
 
-export default RecipesContext;
+    <recipecontext.Provider value={{ data, setData, favourite, setFavourite }}>
+      {props.children}
+    </recipecontext.Provider>
+  )
+}
+
+export default RecipeContext
