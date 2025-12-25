@@ -72,9 +72,11 @@ const Create = () => {
         className="block border-b outline-0 p-2 bg-gray-800"
         {...register("categories")}
       >
-        <option value="cat-1">Select 1</option>
-        <option value="cat-2">Select 2</option>
-        <option value="cat-3">Select 3</option>
+        <option value="">Select Category</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="supper">Supper</option>
+          <option value="dinner">Dinner</option>
       </select>
 
       <button className="block mt-5 bg-gray-900 px-4 py-2 rounded">
