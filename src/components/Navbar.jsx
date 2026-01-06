@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,9 +10,10 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center p-6 rounded-full border-2 relative bg-white">
-      <h1 className="text-2xl font-[Helvetica] font-bold text-green-600">
-        CulinaryHub
-      </h1>
+      <div className="flex items-center gap-2">
+        <img src={logo} alt="CulinaryHub Logo" className="h-14 w-auto" />
+        <h1 className="text-2xl font-[Helvetica] font-bold text-green-600">CulinaryHub</h1>
+      </div>
 
       {/* Hamburger for small screens only */}
       <div
@@ -52,7 +54,7 @@ const Navbar = () => {
 
       {/* Dropdown menu for small screens */}
       {isOpen && (
-        <div className="absolute top-[100%] left-0 w-full bg-white shadow-md flex flex-col items-center py-4 md:hidden z-10">
+        <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-4 md:hidden z-10">
           {["/", "/recipes", "/about", "/contact", "/fav"].map((path, idx) => (
             <NavLink
               key={idx}
