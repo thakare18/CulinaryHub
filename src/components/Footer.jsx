@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Left Side: Website Name & Email Subscribe */}
         <div className="lg:w-1/3 space-y-4">
           <h2 className="text-3xl font-bold text-green-600 font-[Helvetica]">
-            FlavorFiesta
+            CulinaryHub
           </h2>
           <p className="text-gray-600">
             Join our newsletter to get delicious recipes delivered straight to
@@ -145,7 +145,7 @@ const Footer = () => {
 
       {/* Bottom Part: Copyright */}
       <div className="mt-10 border-t border-gray-300 pt-4 text-center text-sm text-gray-500">
-        © 2025 CulinaryHub. All rights reserved.Developed by Prathamesh Thakare.
+        © 2026 CulinaryHub. All rights reserved. Developed by Prathamesh Thakare.
       </div>
     </footer>
   );

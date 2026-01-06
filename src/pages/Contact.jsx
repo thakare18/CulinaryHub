@@ -40,11 +40,11 @@ const Contact = () => {
           </h2>
           <div>
             <h3 className="text-lg font-semibold text-gray-700">Call Us:</h3>
-            <p className="text-gray-500">+1 234 567 890</p>
+            <p className="text-gray-500">+91 8010182808</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-700">Location:</h3>
-            <p className="text-gray-500">123, Green Street, Flavor Town</p>
+            <p className="text-gray-500">401105, Bhayandar East,Kashinagar</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-700">
@@ -68,7 +68,7 @@ const Contact = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://www.instagram.com/yourprofile"
+              href="https://www.instagram.com/thakare_018"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
@@ -76,7 +76,7 @@ const Contact = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://www.youtube.com/yourchannel"
+              href="https://www.youtube.com/@PrathameshThakare-18"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
@@ -84,7 +84,7 @@ const Contact = () => {
               <FaYoutube />
             </a>
             <a
-              href="https://twitter.com/yourprofile"
+              href="https://twitter.com/PrathameshThakare18"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
