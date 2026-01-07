@@ -56,8 +56,7 @@ const Home = () => {
         <div className="w-full md:w-[40%] p-2 sm:p-4 flex justify-center md:justify-end">
           <div
             className="w-full sm:w-full md:w-full lg:w-[100%] h-[40vh] sm:h-[50vh] md:h-[65vh] mt-4 
-                  rounded-none md:rounded-none lg:rounded-full overflow-hidden"
-          >
+                  rounded-none md:rounded-none lg:rounded-full overflow-hidden">
             <video
               className="w-full h-full object-cover"
               autoPlay

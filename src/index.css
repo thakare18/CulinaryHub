@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Import mobile responsive styles */
+@import './mobile-responsive.css';
+
 a {
   font-weight: 500;
   color: #646cff;
