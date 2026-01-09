@@ -66,9 +66,9 @@ const Contact = () => {
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
             >
               <FaFacebookF />
-            </a>
+            </a>// ok
             <a
-              href="https://www.instagram.com/thakare_018"
+              href="https://www.instagram.com/thakare_018" // insta 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-400 text-gray-100 hover:bg-green-500 hover:text-white rounded-full p-3 transform hover:scale-110 transition duration-300"
