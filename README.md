@@ -48,8 +48,8 @@ http://localhost:5173/
 Folder Structure
 CulinaryHub/
 │
-├── public/                 # Static assets
-├── src/                    # Application source code
+├── public/                 
+├── src/                   
 │   ├── components/
 │   ├── pages/
 │   ├── styles/
